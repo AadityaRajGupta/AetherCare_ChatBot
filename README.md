@@ -27,7 +27,7 @@ To ensure that all dependencies are correctly installed, start by creating a Con
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/AetherCare_ChatBott.git
+git clone https://github.com/AadityaRajGupta/AetherCare_ChatBot.git
 cd AetherCare_ChatBot
 
 # Create the environment
@@ -40,7 +40,20 @@ conda activate health-bot
 pip install -r requirements.txt
 ```
 
-### Step 2: Set up API Keys
+### Step 2: Download the quantize model from the link provided in model folder & keep the model in the model directory:
+
+```ini
+## Download the Llama 2 Model:
+
+llama-2-7b-chat.ggmlv3.q4_0.bin
+
+
+## From the following link:
+https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGML/tree/main
+```
+
+
+### Step 3: Set up API Keys
 
 Make sure you have your **Pinecone API key** and any other necessary keys configured in your environment:
 
