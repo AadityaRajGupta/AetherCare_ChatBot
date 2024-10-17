@@ -164,3 +164,4 @@ cython_debug/
 my_help.txt
 model/llama-2-7b-chat.ggmlv3.q2_K.bin
 Ground.ipynb
+model/llama-2-7b-chat.ggmlv3.q4_0.bin
