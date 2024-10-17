@@ -31,10 +31,10 @@ git clone https://github.com/your-username/AetherCare_ChatBott.git
 cd AetherCare_ChatBot
 
 # Create the environment
-conda env create -f environment.yml
+conda create -n health-bot python=3.8 -y
 
 # Activate the environment
-conda activate AetherCare_ChatBot
+conda activate health-bot
 
 # Download the Dependencies
 pip install -r requirements.txt
