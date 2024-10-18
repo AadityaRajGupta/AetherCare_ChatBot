@@ -60,9 +60,26 @@ Make sure you have your **Pinecone API key** and any other necessary keys config
 ```bash
 # Set Pinecone API key
 PINECONE_API_KEY=your_pinecone_api_key
+# Enter the index name
+INDEX_NAME=your_index_name
+```
+### Step 4: Store String Data to Pinecone
+
+Run the following command to store string data to Pinecone:
+
+```bash
+python store_index.py
 ```
 
-## Usage
+### Step 5: Run the Application
+
+After setting up the index, run the application using:
+
+```bash
+python app.py
+```
+
+## If You Want to Implement on Your Own, Follow These Steps
 
 ### Initial Testing
 
@@ -98,3 +115,7 @@ This README file outlines how to:
 - Transition to a more structured codebase for further development.
 
 Make sure to replace placeholders (e.g., API keys, repository URLs) with the actual project details.
+
+```
+
+Feel free to adjust any parts as needed!
