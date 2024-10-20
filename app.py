@@ -36,7 +36,7 @@ PROMPT=PromptTemplate(template=prompt_template, input_variables=["context", "que
 llm_model=CTransformers(model="model/llama-2-7b-chat.ggmlv3.q4_0.bin",
                 model_type="llama",
                 config={'max_new_tokens':512,
-                        'temperature':0.8})
+                        'temperature':0.6})
 
 
 
@@ -58,5 +58,5 @@ def chat():
 
 
 if __name__ == '__main__':
-    app.run(debug= True)
+    app.run(host="0.0.0.0", port= 5000,debug= True)
 

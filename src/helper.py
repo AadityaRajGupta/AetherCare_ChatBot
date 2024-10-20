@@ -33,7 +33,7 @@ def custom_retrieval_qa(query, vectorstore, llm_model,PROMPT, k=3):
     results = vectorstore.similarity_search(query, k=k) 
     context = "\n".join([result.page_content for result in results])
     formatted_prompt = PROMPT.format(context=context, question=query)
-    answer = llm_model(formatted_prompt)
+    answer = llm_model.invoke(formatted_prompt)
 
     return answer
 
